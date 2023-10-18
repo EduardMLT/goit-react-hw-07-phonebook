@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL =
-    'https://652f9ba10b8d8ddac0b2cb37.mockapi.io/API/phonebook07/';     
+axios.defaults.baseURL = 'https://652f9ba10b8d8ddac0b2cb37.mockapi.io';
 
 export const getContacts = async () => {
   const response = await axios.get('/contacts');
@@ -17,4 +16,3 @@ export const removeContact = async id => {
   const response = await axios.delete(`/contacts/${id}`);
   return response.data;
 };
-
