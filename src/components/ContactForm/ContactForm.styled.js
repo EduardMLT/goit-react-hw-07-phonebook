@@ -17,4 +17,10 @@ export const Button = styled.button`
   margin-left: auto;
   margin-bottom: 20px;
   margin-right: auto;
+  background: #abcec300;
+
+  &:hover,
+  :focus {
+    background-color: #6aa290;
+  }
 `;
